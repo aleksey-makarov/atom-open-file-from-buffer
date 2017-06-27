@@ -1,5 +1,10 @@
-# open-file-from-buffer package
+# Atom open-file-from-buffer package
 
-A short description of your package.
+Parse current line as `filename:row` and open that file
 
-![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+On `open-file-from-buffer:open` event (<kbd>Ctrl-t</kbd> key) it parses the 
+line under cursor and opens the file whose `filename:row` is on that line.
+
+The filename should start at the beginning of the string, then should go
+a column, and then line number.  It's the format of output from
+`grep -n [something]`
