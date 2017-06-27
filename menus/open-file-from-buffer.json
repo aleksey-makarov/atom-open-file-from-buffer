@@ -1,0 +1,10 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Open file from buffer",
+        "command": "open-file-from-buffer:open"
+      }
+    ]
+  }
+}
